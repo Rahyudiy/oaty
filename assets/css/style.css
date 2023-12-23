@@ -1,0 +1,451 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Arvo:ital@1&family=Bad+Script&family=Bebas+Neue&family=Cardo:ital@1&family=DM+Sans&family=Figtree&family=Inter+Tight:wght@400;500&family=Inter:wght@400;700&family=Italianno&family=Josefin+Sans:wght@500;700&family=Marck+Script&family=Montserrat&family=Oooh+Baby&family=Poppins:ital,wght@0,300;0,400;0,600;1,700&family=Quattrocento&family=Quicksand:wght@700&family=Sawarabi+Gothic&family=Source+Sans+3&family=Stick+No+Bills:wght@800&family=Tangerine:wght@700&family=Unna:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Arvo:ital@1&family=Bad+Script&family=Bebas+Neue&family=Cardo:ital@1&family=DM+Sans&family=Figtree&family=Inter+Tight:wght@400;500&family=Inter:wght@400;700&family=Italianno&family=Josefin+Sans:wght@500;700&family=Marck+Script&family=Montserrat&family=Oooh+Baby&family=Poppins:ital,wght@0,300;0,400;0,600;1,700&family=Quattrocento&family=Quicksand:wght@700&family=Sawarabi+Gothic&family=Source+Sans+3&family=Stick+No+Bills:wght@800&family=Unna:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Arvo:ital@1&family=Bad+Script&family=Bebas+Neue&family=Cardo:ital@1&family=DM+Sans&family=Figtree&family=Inter+Tight:wght@400;500&family=Inter:wght@400;700&family=Italianno&family=Josefin+Sans:wght@500;700&family=Marck+Script&family=Montserrat&family=Noto+Serif&family=Oooh+Baby&family=Poppins:ital,wght@0,300;0,400;0,600;1,700&family=Quattrocento&family=Quicksand:wght@700&family=Sawarabi+Gothic&family=Source+Sans+3&family=Stick+No+Bills:wght@800&family=Tangerine:wght@700&family=Unna:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Arvo:ital@1&family=Bad+Script&family=Bebas+Neue&family=Cardo:ital@1&family=DM+Sans&family=Figtree&family=Inter+Tight:wght@400;500&family=Inter:wght@400;700&family=Italianno&family=Josefin+Sans:wght@500;700&family=Marck+Script&family=Montserrat&family=Noto+Serif&family=Oooh+Baby&family=Poppins:ital,wght@0,300;0,400;0,600;1,700&family=Quattrocento&family=Quicksand:wght@700&family=Sawarabi+Gothic&family=Solway&family=Source+Sans+3&family=Stick+No+Bills:wght@800&family=Tangerine:wght@700&family=Unna:ital@1&display=swap");
+
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  background-color: #000;
+  padding: 2%;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.st-row {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+}
+
+.st-row .st-left {
+  background-color: #e3e3e1;
+  width: 63%;
+  padding: 0.5%;
+}
+
+.st-row .st-left .top-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.st-row .st-left .top-content h1 {
+  font-size: 8vw;
+  line-height: none;
+  font-weight: 100;
+  letter-spacing: -0.3vw;
+  font-family: "Noto Serif", serif;
+}
+
+.st-row .st-left img {
+  width: 23vw;
+  height: 18vw;
+  margin: 0 -4vw 0 -4vw;
+  filter: drop-shadow(-5px 10px 20px rgba(0, 0, 0, 0.51));
+}
+
+.st-row .st-left .btm-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: fit-content;
+}
+
+.st-row .st-left .btm-content .explore {
+  width: 25vw;
+  font-family: "Poppins", sans-serif;
+  line-height: 2vw;
+  font-size: 1vw;
+}
+
+.st-row .st-left .btm-content .explore h2 {
+  font-weight: 200;
+}
+
+.st-row .st-left .btm-content .explore h2 span {
+  font-weight: 800;
+}
+
+.st-row .st-left .btm-content .year {
+  margin-top: -2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Noto Serif", serif;
+  border-bottom: 0.6vw solid #df2425;
+}
+
+.st-row .st-left .btm-content .year h1 {
+  font-size: 8vw;
+  font-weight: 100;
+  letter-spacing: -0.3vw;
+  font-family: "Noto Serif", serif;
+}
+
+.st-row .st-left .btm-content .year h2 {
+  font-size: 1.4vw;
+  font-weight: 100;
+  letter-spacing: -0.01vw;
+  font-family: "Noto Serif", serif;
+}
+
+.st-row .st-left .btm-content .chef {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+  font-family: "Tangerine", cursive;
+  font-size: 4vw;
+  color: #df2425;
+}
+
+.st-row .st-left .btm-content .chef img {
+  width: 15vw;
+  margin-top: -8vw;
+  height: 10vw;
+}
+
+.st-row .st-rt {
+  padding-left: 1vw;
+  background-image: url("../img/line.svg");
+  background-size: contain;
+  background-repeat: repeat;
+  width: 35%;
+  color: white;
+}
+
+.st-row .st-rt .mc {
+  display: flex;
+  align-items: center;
+}
+
+.st-row .st-rt .mc img {
+  width: 20vw;
+  height: 18vw;
+  margin-left: -1vw;
+}
+
+.st-row .st-rt h1 {
+  font-size: 6vw;
+  font-weight: 100;
+  letter-spacing: -0.3vw;
+  font-family: "Noto Serif", serif;
+}
+
+.st-row .st-rt .haven {
+  text-align: center;
+  margin-bottom: -5vw;
+}
+
+.st-row .st-rt .bake {
+  text-align: center;
+  margin-top: -5vw;
+}
+
+.nd-row {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  margin-top: 5vw;
+}
+
+.nd-row .nd-left {
+  width: 65vw;
+  height: fit-content;
+  display: flex;
+}
+
+.nd-row .nd-left .bread {
+  width: 50vw;
+  height: 40vw;
+  margin-top: -3vw;
+  margin-left: -6vw;
+  background-image: url("../img/hands.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.nd-row .nd-left .grup-icon {
+  color: #e3e3e1;
+}
+
+.nd-row .nd-left .grup-icon h2 {
+  font-family: "Solway", serif;
+  font-size: 3vw;
+  margin-top: 4vw;
+  width: 30vw;
+}
+
+.nd-row .nd-left .grup-icon .icon {
+  display: flex;
+  gap: 1vw;
+}
+
+.nd-row .nd-left .grup-icon .icon img {
+  width: 7vw;
+}
+
+.nd-row .nd-rt {
+  width: 40vw;
+  padding: 2vw;
+  height: 40vw;
+  background-color: #e3e3e1;
+  background-image: url("../img/award.svg");
+  background-size: 90%;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  transition: background-size ease-in-out 0.8s;
+}
+
+.nd-row .nd-rt:hover {
+  background-size: 100%;
+}
+
+.nd-row .nd-rt h1 {
+  text-align: center;
+  font-size: 4.5vw;
+  line-height: none;
+  font-weight: 100;
+  letter-spacing: -0.3vw;
+  font-family: "Noto Serif", serif;
+}
+
+@media screen and (max-width: 768px) {
+  
+.st-row {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.st-row .st-left {
+  background-color: #e3e3e1;
+  width: 100%;
+  padding: 0.5%;
+}
+
+
+.st-row .st-left .top-content h1 {
+  font-size: 14vw;
+  line-height: none;
+  font-weight: 100;
+  letter-spacing: -0.3vw;
+  font-family: "Noto Serif", serif;
+}
+
+.st-row .st-left img {
+  width: 23vw;
+  height: 18vw;
+  margin: 0 -4vw 0 -4vw;
+  filter: drop-shadow(-5px 10px 20px rgba(0, 0, 0, 0.51));
+}
+
+
+.st-row .st-left .btm-content .explore {
+  width: 25vw;
+  font-family: "Poppins", sans-serif;
+  line-height: 2vw;
+  font-size: 1.4vw;
+}
+
+.st-row .st-left .btm-content .explore h2 {
+  font-weight: 200;
+}
+
+.st-row .st-left .btm-content .explore h2 span {
+  font-weight: 800;
+}
+
+.st-row .st-left .btm-content .year {
+  margin-top: -2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Noto Serif", serif;
+  border-bottom: 0.6vw solid #df2425;
+}
+
+.st-row .st-left .btm-content .year h1 {
+  font-size: 9vw;
+  font-weight: 100;
+  letter-spacing: -0.3vw;
+  font-family: "Noto Serif", serif;
+}
+
+.st-row .st-left .btm-content .year h2 {
+  font-size: 1.8vw;
+  font-weight: 100;
+  letter-spacing: -0.01vw;
+  font-family: "Noto Serif", serif;
+}
+
+.st-row .st-left .btm-content .chef {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+  font-family: "Tangerine", cursive;
+  font-size: 6vw;
+  color: #df2425;
+}
+
+.st-row .st-left .btm-content .chef img {
+  width: 20vw;
+  margin-top: -5vw;
+  margin-left: -8vw;
+  height: 15vw;
+}
+
+
+.st-row .st-rt {
+  padding-left: 1vw;
+  background-image: url("../img/line.svg");
+  background-size: contain;
+  background-repeat: repeat;
+  width: 100%;
+  color: white;
+}
+
+.st-row .st-rt .mc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.st-row .st-rt .mc img {
+  width: 20vw;
+  height: 18vw;
+  margin-left: -1vw;
+}
+
+.st-row .st-rt h1 {
+  font-size: 10vw;
+  font-weight: 100;
+  letter-spacing: -0.3vw;
+  font-family: "Noto Serif", serif;
+}
+
+.st-row .st-rt .haven {
+  text-align: center;
+  margin-bottom: -5vw;
+}
+
+.st-row .st-rt .bake {
+  text-align: center;
+  margin-top: -5vw;
+}
+
+
+.nd-row {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vw;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.nd-row .nd-left {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+
+.nd-row .nd-left .bread {
+  width: 60vw;
+  height: 45vw;
+  margin-top: -3vw;
+  margin-left: -2vw;
+  background-image: url("../img/hands.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.nd-row .nd-left .grup-icon {
+  color: #e3e3e1;
+}
+
+.nd-row .nd-left .grup-icon h2 {
+  font-family: "Solway", serif;
+  font-size: 4vw;
+  margin-top: 4vw;
+  width: 30vw;
+}
+
+.nd-row .nd-left .grup-icon .icon {
+  display: flex;
+  gap: 1vw;
+}
+
+.nd-row .nd-left .grup-icon .icon img {
+  width: 7vw;
+}
+
+.nd-row .nd-rt {
+  width: 40vw;
+  padding: 2vw;
+  height: 60vw;
+  border-radius: 2vw;
+  background-color: #e3e3e1;
+  background-image: url("../img/award.svg");
+  background-size: 90%;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  transition: background-size ease-in-out 0.8s;
+}
+
+.nd-row .nd-rt:hover {
+  background-size: 100%;
+}
+
+.nd-row .nd-rt h1 {
+  text-align: center;
+  font-size: 4.5vw;
+  line-height: none;
+  font-weight: 100;
+  letter-spacing: -0.3vw;
+  font-family: "Noto Serif", serif;
+}
+}
